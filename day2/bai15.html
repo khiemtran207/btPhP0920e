@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 1</title>
+</head>
+<body>
+	<style type="text/css">
+		.container{
+			margin-left: 100px;
+			width: 500px;
+			height: 600px;
+			background: linear-gradient(108deg, rgba(98,5,35,0.8407738095238095) 43%, rgba(222,43,66,1) 62%, rgba(213,18,51,0) 100%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container .main{
+			width: 350px;
+			height: 450px;
+			background-color: black;
+			border-radius: 20px;
+			position: relative;
+			color: white;
+			text-align: center;
+			box-sizing: border-box;
+		}
+		.container .main .form{
+			width: 100%;
+			height: 400px;
+			position: absolute;
+			top: 50px;
+			color: black;
+			background-color: white;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			text-align: left;
+			box-sizing: border-box;
+		}
+		.container .main .form p{
+			font-weight: bold;
+			margin-left: 20px;
+		}
+		.container .main .form label{
+			margin-left: 20px ;
+			font-weight:bold;
+		}
+		.container .main .form input{
+			margin-left: 20px ;
+			width: 200px;
+			border: 1px solid gray;
+			border-top: 3px solid #908989 
+		}
+		.container .main .form select{
+			width: 280px;
+			height: 30px; 
+			margin-left: 20px;
+			font-weight: bold;
+			border-radius: 6px;
+			font-size: 20px;
+		}
+		.container .main .form button{
+			width: 170px;
+			height: 40px;
+			margin-left: 80px;
+			background-color: #a93636;
+			border: none;
+			border-radius: 10px;
+			color: #ddd;
+			font-weight: bold;
+		}
+		.container .main .form button:hover{
+			background-color: #0fb7ac;
+		}
+	</style>
+	<div class="container">
+		<div class="main">
+			<p><TABLE>TIP CALCULATOR</TABLE></p>
+			<div class="form">
+				<form>
+					<p>How much was yourr bill?</p>
+					<label>$</label>
+					<input type="text" name="" placeholder="Bill Amount"><br><br>
+					<label>How was your sevice?</label><br><br>
+					<select>
+						<option>--Choose an Option--</option>
+						<option>--Choose an Option--</option>
+						<option>--Choose an Option--</option>
+					</select><br><br>
+					<label>How many people are  sharting the bill?</label><br><br>
+					<input type="text" name="">people<br><br><br>
+					<button>CALCULATE!</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

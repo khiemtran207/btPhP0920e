@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+.container {
+    font-family: arial, sans-serif;
+}
+.head {
+    height: 70px;
+    line-height: 70px;
+    background: #2f2f2f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+@font-face{
+ 			/*tự set tên font family*/
+ 			font-family: "pacifico";
+ 			/*đường dẫn tới font*/
+ 			src: url('font/Pacifico.ttf');
+ }
+.title {
+    font-family: pacifico;
+    padding: 0px 0 0 10%;
+    font-size: 30px;
+}
+.menu{
+	margin-right: 10%;
+}
+.menu li {
+    list-style: none;
+    display: inline-block;
+    height: 50px;
+    font-size: 13px;
+   padding-right: 10px; 
+}
+.main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 18px;
+}
+p{
+	font-size: 15px;
+}
+.row {
+    display: flex;
+}
+.col-top-left {
+    width: 50%;
+    margin: 20px 0 0 0;
+}
+.col-top-left p {
+    margin: 10px 10px 40px 0;
+}
+button {
+    background: #f69460;
+    border: none;
+    width: 90px;
+    height: 30px;
+    border-radius: 4px;
+    color: #fff;
+}
+.col-top-right {
+    margin: 30px 0 0 10px;
+}
+.headct {
+    margin: 20px 0;
+}
+.col-center {
+    width: 33.33%;
+    margin: 0px 30px 40px 0;
+}
+.black {
+    width: 100%;
+    height: 180px;
+    background: #333;
+    margin: 0 0 10px;
+}
+.col-center p {
+    margin: 15px 0;
+}
+.footer .row{
+	font-family: arial,sans-serif;
+	background: #2f2f2f;
+	color: #fff;
+	max-width: 100%;
+	padding: 30px 10% 0 10%;
+
+}
+.chung{
+	width: 33.33%;
+}
+.date {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    margin: 0;
+}
+.footer .rowd{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.date {
+	margin: 20px 10px 0 0;
+    width: 100px;
+    height: 50px;
+    background: #fff;
+    color: #060505;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+.date .col-bt-left p {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+}
+.footer h2{
+	font-size: 16px;
+}
+.footer h1 {
+    font-size: 13px;
+    margin-top: 20px;
+}
+.footer .col-bt-left p {
+    font-size: 13px;
+    margin: 10px 0 0 0;
+}
+.footer .col-bt-ct p {
+    font-size: 13px;
+    margin: 20px 0;
+    padding-right: 20px;
+}
+.footer .col-bt-right h3 {
+    font-size: 14px;
+    margin: 0 10px;
+}
+.row.r {
+    margin: 20px 0;
+    padding: 0;
+}
+.footer .col-bt-right h3 {
+    height: 100%;
+    line-height: 180%;
+}
+.footer .end{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: gray;
+}

@@ -1,0 +1,141 @@
+.container {
+    font-family: arial, sans-serif;
+}
+.container p{
+	font-size: 12px;
+}
+.main {
+    margin: 0 auto;
+    max-width: 80%;
+}
+h1.title{
+    margin: 0;
+    background: #444;
+    height: 60px;
+    color: #fff;
+    padding: 10px 0 0 10%;
+}
+.function {
+    background: #222;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.function .menu{
+	padding-left: 10%;
+}
+.function .menu ul {
+	padding: 0;
+    margin: 0;
+    height: 40px;
+    /* text-align: left; */
+}
+.function .menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 5px 0px 0;
+}
+.function .menu ul li a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #747963;
+    font-size: 12px;
+}
+.function .menu button {
+    margin: 0;
+    padding: 0;
+    background: #686868;
+    font-size: 11px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    width: 40px;
+    height: 15px;
+}
+.search {
+    margin: 10px 10% 0 0;
+}
+.search input[type="text"] {
+    border-radius: 5px;
+    width: 125px;
+    height: 18px;
+    border: none;
+}
+.search button {
+    background: #686868;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    height: 18px;
+}
+.row1 {
+    background: #f4f4f4;
+    display: flex;
+    border: 1px solid black;
+    margin: 15px 0 0 0;
+}
+.col1{
+	width: 33.33%;
+}
+.row1 h1 {
+    font-size: 20px;
+    margin: 0;
+   margin: 10px 20px;
+}
+.row1 p {
+    margin: 0 20px 0 10px;
+    font-size: 14px;
+    /* padding: 0 20px; */
+}
+.row1 button {
+    margin: 25px 0 25px 10px;
+    color: gray;
+    padding: 0;
+}
+.row1 span {
+    border-right: 1px solid gray;
+   	background: #bdbdbd;
+   	color: black;
+}
+.row2 {
+    display: flex;
+}
+.col21{
+	width: 70%;
+	padding-right: 10px;
+}
+.col22{
+	width: 30%;
+}
+.img {
+    width: 240px;
+    height: 160px;
+    background: #cccc;
+    float: left;
+    margin: 20px 10px 0 0;
+}
+.texti {
+    font-style: italic;
+    margin: 0 20px;
+}
+.row3 {
+    display: flex;
+    margin: -20px 10px 0 0;
+}
+.col3 p {
+    padding: 0 20px 0 0;
+}
+.col22 .text {
+    background: #f4f4f4;
+    border: 1px solid gray;
+    padding: 15px;
+    font-size: 13px;
+}
+.footer {
+    background: #eeeeee;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10%;
+    color: #888484;
+}

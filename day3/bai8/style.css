@@ -1,0 +1,43 @@
+.container {
+    margin: 10px auto;
+    max-width: 80%;
+    font-family: arial, sans-serif;
+}
+.head h1 {
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #e43232;
+    /* margin: 20px 10px; */
+}
+.row {
+    display: flex;
+}
+.col {
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    background: #E2E2E2;	
+    margin: 0 10px 10px 0;
+}
+.row2 {
+    display: flex;
+}
+a {
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: -59px;
+    /* margin-bottom: -31px; */
+}
+.col2{
+	width: 30%;
+	margin: 0 10px 0 0;
+}
+.col2 p {
+    margin: -15px 5px 40px 0;
+}
+.footer h1 {
+    color: red;
+    font-size: 17px;
+    margin: 20px 0 0 0;
+}

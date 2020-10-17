@@ -1,0 +1,49 @@
+/*quy tắc css: đi từ đầu xuống cuối*/
+/*vẫn dùng inspect HTML để css cho trực quan */
+.container {
+    max-width: 80%;
+    /* background-color: red; */
+    margin: 10px auto;
+    text-align: center;
+   /* background-color: #ddd;*/
+}
+.logo, .menu, .feature, .footer{
+	background-color: #efefef;
+}
+.logo-heading {
+    padding: 10px 0;
+    margin: 0;
+}
+ul {
+	/*justify-content: center;*/
+    list-style: none;
+    /*display: flex;*/
+}
+.menu {
+    margin: 5px 0 20px;
+    padding: 5px 0;
+}
+li {
+	/*cơ chế flex nên dùng khi chia layout*/
+    display: inline-block;
+    margin: 0 20px;
+}
+.feature {
+    margin-bottom: 20px;
+    height: 100px;
+}
+.row {
+    display: flex;
+    margin: 0 -10px;
+}
+.col{
+	width: 33.33%;
+	height: 100px;
+	background-color: #efefef;
+	margin: 0 10px;
+}
+.footer{
+	margin: 10px 0;
+	height: 50px;
+	line-height: 50px;
+}

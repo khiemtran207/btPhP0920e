@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>bài 5</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--
+		Nguyên tắc khi dựng trang html bất kì
+	- cần phân tích bố cục của trang, say đó để chia ra làm các khối theo chức năng của nó
+	- nên khai báo class thay vì id cho các khối
+	- nếu phát hiện khối nào có cấu trúc hàng và cột -> cần xây dựng layout để sử dụng css flex, chỉ chia layout nếu 1 hàng có từ 2 cột trở lên
+	- toàn nội bộ nội dung trang web của một khối ngoài cùng 
+	- xây dựng HTML từ tổng quát, sau đó mới đi vào chi tiết từng nội dung từng khối
+	- sau khi xong html -> css
+	tạo thư mục css ngang hàng với file hiện tại, bên trong thư mục css, tạo 1 file style.css chua_bt_5_ngay_4.html.../style.css
+	 --> 
+	<div class="container">
+		<!-- logo -->
+		<div class="logo">
+			<h1 class="logo-heading">logo</h1>
+		</div>
+		<!-- end logo -->
+
+		<!-- menu -->
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">Froduct</a>
+				</li>
+				<li>
+					<a href="#">Setvices</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<!-- end menu -->
+
+		<!-- FEARURE(chỉ có một hàng/ 1 cột nên không chia layout)-->
+		<div class="feature">
+			Feature
+		</div>
+		<!-- end feature -->
+
+		<!-- main(có 1 hàng/3 cột nên dựng cấu trúc layout)-->
+		<div class="main">
+			<!-- cấu trúc layout sẽ có khối bao ngoài là class=row, bên trong sẽ là cột tương ứng với số thẻ div -->
+			<div class="row">
+				<div class="col">Column One</div>
+				<div class="col">Column Two</div>
+				<div class="col">Column Three</div>
+			</div>
+		</div>
+		<!-- end main -->
+
+		<!-- footer(có một hàng một cột nên k chia layout) -->
+		<div class="footer">
+			<!-- để viết ký tự copyright, search với từ khóa: html character special để lấy mã html của ký tự đó -->
+			&#169; Copyright 2011
+		</div>
+		<!-- end footer -->
+	</div>
+</body>
+</html>
