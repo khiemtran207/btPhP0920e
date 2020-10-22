@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 4</title>
+</head>
+<body>
+	<form action="#" method="post" id="form">
+		<fieldset>
+			<legend>Access Credentials</legend>
+				<table>
+					<tr>
+						<td>Username: </td>
+						<td><input type="text" id='name'>*</td>
+					</tr>
+					<tr>
+						<td>Passwords: </td>
+						<td><input type="text" id='pass'>*</td>
+					</tr>
+					<tr>
+						<td>Email: </td>
+						<td><input type="text" id='email'>*</td>
+					</tr>
+				</table>
+		</fieldset>
+		<fieldset>
+			<legend>Other Infomation</legend>
+			<table>
+				<tr>
+					<td>Name: </td>
+					<td><input type="text" id="othername" name=""></td>
+				</tr>
+				<tr>
+					<td>Phone: </td>
+					<td><input type="text" id="otherphone" name=""></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" name="" value="Submit Form">
+					</td>
+				</tr>
+			</table>
+			*= Required Field
+		</fieldset>
+	</form>
+	<p id="showInfo" style="color: blue; text-transform: capitalize;"></p>
+	<script type="text/javascript">
+		document.getElementById('form').addEventListener('submit',function(){
+			document.getElementById('showInfo').innerHTML = 'Username vừa nhập là: ' + document.getElementById('name').value + "<br>" + 'Passwords vừa nhập là: ' + document.getElementById('pass').value + '<br>' + 'Email vừa nhập là: ' + document.getElementById('email').value + '<br>' + 'name vừa nhập là: ' + document.getElementById('othername').value + "<br>" + 'phone vừa nhập là: ' + document.getElementById('otherphone').value;
+
+			event.preventDefault();
+		});
+	</script>
+</body>
+</html>

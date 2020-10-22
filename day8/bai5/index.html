@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 5</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>	
+	<style type="text/css">
+		a{
+			color: #fff;
+			text-decoration: none;
+		}
+		.container{
+			margin: 30px auto;
+		}
+		button{
+			margin-right: 40px;
+		}
+	</style>
+	<div class="container">
+		<button class="btn btn-primary" id="menu1"><a href="#">menu 1</a></button>
+		<button class="btn btn-primary" id="menu2"><a href="#">menu 1</a></button>
+		<button class="btn btn-primary" id="menu3"><a href="#">menu 1</a></button>
+	</div>
+	<script type="text/javascript">
+		document.getElementById('menu1').addEventListener('mouseenter', function(){
+			this.style = 'background: yellow';
+		});
+		document.getElementById('menu1').addEventListener('mouseleave', function(){
+			this.style = 'background: blue';
+		})
+
+		document.getElementById('menu2').addEventListener('mouseenter', function(){
+			this.style = 'background: yellow';
+		});
+		document.getElementById('menu2').addEventListener('mouseleave', function(){
+			this.style = 'background: blue';
+		});
+
+		document.getElementById('menu3').addEventListener('mouseenter', function(){
+			this.style = 'background: yellow';
+		});
+		document.getElementById('menu3').addEventListener('mouseleave', function(){
+			this.style = 'background: blue';
+		});
+
+	</script>
+</body>
+</html>

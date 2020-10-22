@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 7</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<br>
+	<div class="container">
+		<form>
+			<select id="select" class="form-control">
+				<option id="option1">việt nam</option>
+				<option id="option2">nhật bản</option>
+				<option id="option3">hàn quốc</option>
+			</select>		
+		</form>
+	</div>
+	<script type="text/javascript">
+		document.getElementById('select').addEventListener('change',function(){
+				alert('bạn vừa chọn quốc gia:  ' +  this.value);
+		});
+	</script>
+</body>
+</html>

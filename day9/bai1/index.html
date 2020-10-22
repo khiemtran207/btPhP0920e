@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 1</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Contact Manager</h1><br>
+		<form action="#" id="form" method="post">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-4 form-group">Frist Name</div>
+						<div class="col-8 form-group">
+							<input type="text" class="form-control" name="" id="fristname">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-3 form-group">show fristname:</div>
+						<div class="col-9 form-group" id="showfristname" style="color: blue"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-4 form-group">Last Name</div>
+						<div class="col-8 form-group">
+							<input type="text" class="form-control" name="" id="lastname">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-3 form-group">show lastname:</div>
+						<div class="col-9 form-group" id="showlastname" style="color: blue"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-4 form-group">Email</div>
+						<div class="col-8 form-group">
+							<input type="text" class="form-control" name="" id="email">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-3 form-group">show email:</div>
+						<div class="col-9 form-group" id="showemail" style="color: blue"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-4 form-group">Telephone</div>
+						<div class="col-8 form-group">
+							<input type="text" class="form-control" name="" id="phone">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-3 form-group">show phone:</div>
+						<div class="col-9 form-group" id="showphone" style="color: blue"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<input type="submit" name="" class="btn btn-warning" value="submit">
+				</div>
+				<div class="col-sm-6">
+					<input type="reset" name="" class="btn btn-success"  value="reset" id="click">
+				</div>
+			</div>
+			
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		document.getElementById('form').addEventListener('submit',function(){
+			var fristname = document.getElementById('fristname').value;
+			var lastname = document.getElementById('lastname').value;
+			var email = document.getElementById('email').value;
+			var phone = document.getElementById('phone').value;
+
+			document.getElementById('showfristname').innerHTML = fristname ;
+			document.getElementById('showlastname').innerHTML = lastname;
+			document.getElementById('showemail').innerHTML = email;
+			document.getElementById('showphone').innerHTML = phone;
+
+			event.preventDefault();
+		});
+		
+		// document.getElementById('click').addEventListener('reset',function(){
+		// 	showInfo();
+		// 	fristname = '';
+		// 	lastname = '';
+		// 	email = '';
+		// 	phone = '';
+
+		// });
+		
+	</script>
+
+</body>
+</html>

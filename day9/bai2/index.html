@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai2</title>
+</head>
+<body>
+	<h2>Spring MVC Form Demo - Registration</h2>
+	<form id="form" action="#" method="post">
+		<table>
+			<tr>
+				<td>User Name: </td>
+				<td>
+					<input type="text" id="name" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>Passwords: </td>
+				<td>
+					<input type="password" id="pass" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>E-mail: </td>
+				<td>
+					<input type="text" id="email" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>Birthday(mm/dd/yyyy): </td>
+				<td>
+					<input type="date" id="date" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>Profession:</td>
+				<td>
+					<select id="select">
+						<option>Deverloper</option>
+						<option>tester</option>
+						<option>design</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=2>
+				<input type="submit" name="">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<p id="showInfo" style="color: blue"></p>
+
+	<script type="text/javascript">
+		document.getElementById('form').addEventListener('submit', function(){
+			var name = document.getElementById('name').value;
+			var pass = document.getElementById('pass').value;
+			var date = document.getElementById('date').value; 
+			var email = document.getElementById('email').value;
+			var pro = document.getElementById('select').value;
+			document.getElementById('showInfo').innerHTML = "tên của bạn là: " + name + "<br>" + "passwords vừa nhập là: " + pass + "<br>" + "email vừa nhập là: " + email + "<br>" + "Birthday vừa nhâp là: " + date + "<br>" + "Profession vừa nhập là " + pro;
+			event.preventDefault(); 
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 3</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css-fotnawesome/all.min.css">
+</head>
+<body>	
+	<div class="container">
+		<h1>Javascrip Onsubmit Event Example</h1>
+		<form action="#" id="form" method="post">
+			<div class="row">
+				<div class="col-sm-12 form-group">
+					<label class="text-muted"><i class="fas fa-user"></i> Name: </label>
+					<input type="text" name="" class="form-control text-muted" placeholder="Enter name..." id="name">
+				</div>
+				<div class="col-sm-12 form-group">
+					<label class="text-muted"><i class="fas fa-envelope"></i> Email: </label>
+					<input type="text" name="" class="form-control text-muted" placeholder="Enter email..." id="email">
+				</div>
+				<div class="col-sm-12 form-group">
+					<label class="text-muted"><i class="far fa-id-card"></i> Contact No : </label>
+					<input type="text" name="" class="form-control text-muted" placeholder="Enter Contact No..." id="contact">
+				</div>
+				<div class="col-sm-12 form-group">
+					<input type="submit" name="" class=" col-12 btn btn-warning font-weight-bold" value="Submit" id="click">
+				</div>
+			</div>
+		</form>
+		<p id="Info" style=" color: blue; text-transform:capitalize; " ></p>
+	</div>
+	<script type="text/javascript">
+		document.getElementById('form').addEventListener('submit',function(){
+
+			var name = document.getElementById('name').value;
+			var email = document.getElementById('email').value;
+			var contact = document.getElementById('contact').value;
+
+			document.getElementById('Info').innerHTML = "tên vừa nhập là: " + name + '<br>' + 'email vừa nhập là: ' + email + "<br>" + 'contact no vừa nhập là: ' + contact;
+			event.preventDefault();
+		})
+	</script>
+</body>
+</html>

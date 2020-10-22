@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 3</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<form class="form-group" id="form" action="#" method="post">
+			<label class="text-muted font-weight-bold">Full Name:</label>
+			<input type="text" id="name" class="form-control form-group">
+			<label class="text-muted font-weight-bold">Email ID:</label>
+			<input type="text" id="email" class="form-control form-group">
+			<label class="text-muted font-weight-bold">UserName:</label>
+			<input type="text" id="user" class="form-control form-group">
+			<label class="text-muted font-weight-bold">Passwords:</label>
+			<input type="Password" id="pass" class="form-control form-group">
+			<label class="text-muted font-weight-bold">Gender: </label>
+			<input type="radio" name="gender" class="gender" value="Nam"> Male
+			<input type="radio" name="gender" class="gender" value="Nữ"> Female <br>
+			<input type="submit" class="btn btn-success" name="" value="save">
+		</form>
+		<h6 id="showInfo" style="color: blue; text-transform: capitalize; "></h6>
+	</div>
+	<script type="text/javascript">
+		// document.getElementById('male').addEventListener('change',mail);
+		// document.getElementById('mail').addEventListener('change',femail);
+		document.getElementById('form').addEventListener('submit', function(){	
+				document.getElementById('showInfo').innerHTML = "tên vừa nhập là: " + document.getElementById('name').value + "<br>" + "email vừa nhập là: " + document.getElementById('email').value + "<br>"+ "userName vừa nhập là: " + document.getElementById('user').value + "<br>"+ "passwords vừa nhập là: " + document.getElementById('pass').value + "<br>" + "gender vừa nhập là: " + document.querySelector('.gender:checked').value;
+		
+				event.preventDefault();
+		})
+	</script>
+</body>
+</html>

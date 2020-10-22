@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 6</title>
+	<style type="text/css">
+		.row{
+			display: flex;
+			font-family: arial, sans-serif;
+		}
+		.col1{
+			width: 70%;
+		}
+		.col2{
+			width: 30%;
+		}
+		.container{
+			max-width: 60%;
+			margin: 0 auto;
+		}
+		h3{
+			color: red;
+		}
+		h4{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>Add a book</h3>
+		<form action="#" id="form" method="post">
+			<div class="row">
+				<div class="col1">
+					<h4>Data</h4>
+					<table>
+						<tr>
+							<td><h5>Title</h5></td>
+							<td><input type="text" id="title"></td>
+						</tr>
+						<tr>
+							<td><h5>Description</h5></td>
+							<td>
+								<textarea cols="50" rows="10" id="des"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<input type="submit" name="" value="Save book & authors">
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col2">
+					<h4>Authors</h4><hr>
+					<label>Author name:</label><br>
+					<input type="text" id="name" name=""><br><br>
+					<label>Author Remarks:</label><br>
+					<textarea cols="20" rows="5" id="remarks"></textarea><br><hr><br>
+					<label>Author Name:</label><br>
+					<input type="text" id="name2" name=""><br>
+					<label>Author Remarks:</label><br>
+					<textarea cols="20" rows="5" id="remarks2"></textarea>
+				</div>
+			</div>
+		</form>
+		<div id="showInfo" style="color: blue; text-transform: capitalize;">
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		document.getElementById('form').addEventListener('submit', function(){
+				// var title = document.getElementById('title').value;
+				// var des = document.getElementById('des').value;
+				// var name = document.getElementById('name').value;
+				// var remarks =document.getElementById('remarks').value;
+				// var name2 = document.getElementById('name2').value;
+				// var remarks2 = document.getElementById('remarks2').value;
+
+				document.getElementById('showInfo').innerHTML = 'title: ' + document.getElementById('title').value + '<br>' + 'Description: ' + document.getElementById('des').value + '<br>' + 'Author name: ' + document.getElementById('name').value + '<br>' + 'remarks: ' + document.getElementById('remarks').value + '<br>' + 'name2: ' + document.getElementById('name2').value + '<br>' + 'remarks2: ' + document.getElementById('remarks2').value;
+
+			event.preventDefault();
+		})
+	</script>
+</body>
+</html>

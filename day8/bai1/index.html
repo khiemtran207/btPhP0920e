@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 1</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<style type="text/css">
+		#showName, #showAge{
+			color: red;
+		}
+	</style>
+	<div class="container">
+		<h1>Form Infomation</h1>
+		<form action="#"  id="form" method="post">
+			<div class="row">
+				<div class="col-lg-6">
+					<label class="text-muted">Họ tên:</label>
+					<input type="text" id="name" name="" class="form-control form-group" placeholder="Nhập tên của bạn...">
+				</div>
+				<div class="col-lg-6" id="showName"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<label class="text-muted">Họ tên:</label>
+					<input type="text" id="age" name="" class="form-control form-group" placeholder="Nhập tuổi của bạn...">
+				</div>
+				<div class="col-lg-6" id="showAge"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<input type="submit" class="btn btn-warning text-muted form-control" value="Hiển thị thông tin" name="">
+				</div>
+			</div>
+		</form>
+		<br>
+		<p style="color: red" id="show"></p>
+	</div>
+	<script type="text/javascript">
+
+		document.getElementById('form').addEventListener('submit',function(){
+
+			var name = document.getElementById('name').value;
+			var age = document.getElementById('age').value;
+
+			document.getElementById('showName').innerHTML = "tên vừa nhập: " + name;
+			document.getElementById('showAge').innerHTML = "tên vừa nhập: " + age;
+
+			event.preventDefault();
+			// event.preventDefault();
+		});
+	</script>
+</body>
+</html>
