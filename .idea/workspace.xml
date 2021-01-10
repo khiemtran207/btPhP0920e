@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c399cc8e-0001-462a-98c3-12a86137e3b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/btPHP0920e.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day12/bai8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day15/bai1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day15/bai2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day15/bai3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day15/bai4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day15/bai5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day15/bai7.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16/Ptb2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16/bai1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16/bai10.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16/bai11.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16/bai2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16/bai3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16/bai4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16/bai6.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16/bai7.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16/bai8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16/bai9.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17/bai1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17/bai10.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17/bai11.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17/bai12.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17/bai13.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17/bai2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17/bai3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17/bai6.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17/bai7.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17/bai8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17/bai9.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18/b4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18/bai1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18/bai2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18/bai3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18/bai5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/bai2/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/bai3/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/bai5/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/bai5/xuly.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/thuchanh.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20/bai1/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20/bai1/login_success.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20/bai1/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20/bai2/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20/bai2/login_success.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20/bai2/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20/bai3/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20/bai3/login_success.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20/bai3/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day21/bai1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/CRUD/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/CRUD/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/CRUD/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/CRUD/detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/CRUD/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/CRUD/update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/bai1/anh1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/bai1/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/bai1/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/bai1/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/bai1/detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/bai1/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23/bai1/update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/Database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/bt1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/svg-with-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/svg-with-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css-fotnawesome/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/svg-with-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/svg-with-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/css/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27/bai1/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/configs/Database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/controllers/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/models/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/models/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/views/layout/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/views/product/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/views/product/detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/views/product/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28/mvc_demo/views/product/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai23/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai23/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai23/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai23/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai23/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai23/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai23/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai23/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai23/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai23/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai23/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day1/bai18.html" beforeDir="false" afterPath="$PROJECT_DIR$/day1/bai18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day1/bai9.html" beforeDir="false" afterPath="$PROJECT_DIR$/day1/bai9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2/bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/day2/bai4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8/bai1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/day8/bai1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8/bai2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/day8/bai2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8/bai3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/day8/bai3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8/bai4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/day8/bai4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8/bai5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/day8/bai5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8/bai7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/day8/bai7/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8/css/bootstrap.min.css" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1889696883">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="92" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="92" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day28/mvc_demo/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/day28/mvc_demo/index.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="683" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="btPHP0920e" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btPHP0920e" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btPHP0920e" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btPHP0920e" type="462c0819:PsiDirectoryNode" />
+              <item name="day28" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btPHP0920e" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btPHP0920e" type="462c0819:PsiDirectoryNode" />
+              <item name="day28" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c399cc8e-0001-462a-98c3-12a86137e3b5" name="Default Changelist" comment="" />
+      <created>1609855599332</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609855599332</updated>
+      <workItem from="1609855600704" duration="180000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="180000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="683" height="728" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.014446228" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/day28/mvc_demo/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

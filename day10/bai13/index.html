@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 13</title>
+	<link rel="stylesheet" type="text/css" href="../../day18/css/bootstrap.min.css">
+	<style type="text/css">
+		#error{
+			/*height: 30px;
+			line-height: 30px;*/
+			margin-top: 10px;
+			color: red;
+			font-size: 16px;
+			/*font-weight: bold;*/
+			/*opacity: 0.8;*/
+			text-transform: capitalize;
+		}
+		#result{
+			margin-top: 10px;
+			/*height: 30px;
+			line-height: 30px;*/
+			color: green;
+			font-size: 16px;
+			/*font-weight: bold;*/
+			/*opacity: 0.6;*/
+			text-transform: capitalize;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			function calculate(){
+				var error = '';
+				var result = '';
+
+				var obj_name = document.getElementById('name').value;
+				var obj_email = document.getElementById('email').value;
+				// alert(typeof obj_email.search('@'));
+			// 	document.getElementById('select').addEventListener('change', function(){
+			// 		// var text_option =
+	 	// 		// 		this.value;
+	 	// 		// 	console.log(text_option);
+	 			
+	 	// 		var text_option =this.options[this.selectedIndex].text;
+
+	 	// 			if(text_option == "Selector-Country"){
+			// 		error = "phải chọn Country";
+			// 		alert(error);
+
+			// 		event.preventDefault();
+			// 	}
+			// });
+				
+
+				if(obj_name == '' && obj_email ==  ''){
+					error = 'không được để trống name và email!';
+					//alert(error);
+					document.getElementById('name').focus();
+				}else if(obj_name == ''){
+					error = 'không được để trống name!';
+					document.getElementById('name').focus();
+					//alert(error);
+				}else if(obj_email ==  ''){
+					error = 'không được để trống email!';
+					document.getElementById('email').focus();
+					//alert(error);
+				}else if(obj_email.search('@')== -1 || obj_email.search('.')== -1){
+					error = 'email sai định dạng!';
+					//alert(error);
+					document.getElementById('email').focus();
+				}
+
+				if(error == ''){
+					result = "Name: " + obj_name + "<br>" + "Email: " + obj_email + "<br>" + "Country: ";
+					document.getElementById('result').innerHTML = result;
+					document.getElementById('error').innerHTML = '';
+				}else{
+					document.getElementById('error').innerHTML = error;
+					document.getElementById('result').innerHTML = '';
+				}
+
+
+
+				event.preventDefault();
+
+			};
+			document.getElementById('form').addEventListener('submit', function(){
+				calculate();
+			});
+			document.getElementById('reset').addEventListener('click', function(){
+				document.getElementById('result').innerHTML = "";
+				document.getElementById('error').innerHTML = "";
+			});
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<br>
+		<form action="#" method="post" id="form">
+			<label class="text-muted">Name:</label>
+			<input type="text" class="form-control form-group" name="" id="name">
+			<label class="text-muted">Email:</label>
+			<input type="text" class="form-control form-group" name="" id="email">
+			<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+		    <label class="input-group-text" for="inputGroupSelect01">Country</label>
+		  </div>
+			  <select class="custom-select" id="select">
+			    <option selected>Selector-Country</option>
+			    <option >text VietNam</option>
+			    <option >text Japan</option>
+			    <option >text USA</option>
+			  </select>
+			</div>
+			<input type="submit" class="btn btn-primary" name="" value="Send info">
+			<input type="reset" class="btn btn-danger" id="reset" name="" value="reset">
+			<div id="error"></div>
+			<div id="result"></div>
+		</form>
+	</div>
+</body>
+</html>

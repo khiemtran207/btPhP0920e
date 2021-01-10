@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 1</title>
+	<link rel="stylesheet" type="text/css" href="../../day18/css/bootstrap.min.css">
+	<style type="text/css">
+		.container {
+		    padding-top: 30px;
+		   /* padding-left: -30px;*/
+		    border-left: 1px solid #b3a9a9;
+		}
+		h3{
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+		}
+		button{
+			margin: 5px 5px 10px 0;
+		}
+		#error{
+			color: red;
+			font-size: 18px;
+		}
+		#result{
+			color: blue;
+			font-size: 18px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			function calculate(operator){
+
+				var error = '';
+				var result = '';
+
+				var obj_number_a = document.getElementById('number_a').value;
+				var obj_number_b = document.getElementById('number_b').value;
+				
+				if(obj_number_a == '' || obj_number_b == ''){
+					error = 'không được để trống a hoặc b hoặc cả a và b';
+				}else if(isNaN(obj_number_a) || isNaN(obj_number_b)){
+					error = 'a và b phải là số';
+				}
+
+				if(error == ''){
+
+					a = parseInt(obj_number_a);
+					b = parseInt(obj_number_b);
+
+					switch(operator){
+						case '+':
+						result = a + b;
+						break;
+						case '-':
+						result = a - b;
+						break;
+						case '*':
+						result = a * b;
+						break;
+						case '/':
+						result = a / b;
+						break;
+						case '%':
+						result = a%b;
+						break;
+						case '1++':
+						result = a++;
+						break;
+						case '++1':
+						result = ++a;
+						break;
+						case '1--':
+						result = a--;
+						break;
+						case '--1':
+						result = --a;
+						break;
+					}
+
+					document.getElementById('result').innerHTML = "kết quả của phép tính là: " +result;
+					document.getElementById('error').innerHTML = "";
+				}else{
+					document.getElementById('error').innerHTML = error;
+					document.getElementById('result').innerHTML ="";
+				}
+
+				event.preventDefault();
+				
+			}
+			document.getElementById('tong').addEventListener('click', function(){
+			calculate('+');
+			});
+			document.getElementById('hieu').addEventListener('click', function(){
+			calculate('-');
+			});
+			document.getElementById('tich').addEventListener('click', function(){
+			calculate('*');
+			});
+			document.getElementById('thuong').addEventListener('click', function(){
+			calculate('/');
+			});
+			document.getElementById('du').addEventListener('click', function(){
+			calculate('%');
+			});
+			document.getElementById('ccsau').addEventListener('click', function(){
+			calculate('1++');
+			});
+			document.getElementById('cctrc').addEventListener('click', function(){
+			calculate('++1');
+			});
+			document.getElementById('ttsau').addEventListener('click', function(){
+			calculate('1--');
+			});
+			document.getElementById('tttrc').addEventListener('click', function(){
+			calculate('--1');
+			});
+			document.getElementById('reset').addEventListener('click', function(){
+					document.getElementById('error') == ' ';
+					document.getElementById('result') == ' ';
+				});
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h3>Thực hành toán tử số học</h3><hr>
+		<form action="#" method="post" class="form-group">
+			<label class="text-muted">Nhập vào số a:</label>
+			<input type="text" id="number_a" name="" class="form-control form-group">
+			<label class="text-muted">Nhập vào số b:</label>
+			<input type="text" id="number_b" name="" class="form-control form-group">
+			<button class="btn btn-primary" id="tong">a + b</button>
+			<button class="btn btn-success" id="hieu">a - b</button>
+			<button class="btn btn-danger" id="tich">a * b</button>
+			<button class="btn btn-warning" id="thuong">a / b</button>
+			<button class="btn btn-info" id="du">a % b</button>
+			<button class="btn btn-success" id="ccsau">a++</button><br>
+			<button class="btn btn-primary" id="cctrc">++a</button>
+			<button class="btn btn-danger" id="ttsau">a--</button>
+			<button class="btn btn-warning" id="tttrc">--a</button><br>
+			<input type="reset" name="" id="reset" class="btn btn-warning">
+			<div id="error"></div>
+			<div id="result"></div>
+		</form>
+	</div>
+</body>
+</html>

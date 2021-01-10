@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 11</title>
+	<link rel="stylesheet" type="text/css" href="../../day18/css/bootstrap.min.css">
+	<style type="text/css">
+		#error{
+			/*height: 30px;
+			line-height: 30px;*/
+			margin-top: 10px;
+			color: red;
+			font-size: 16px;
+			font-weight: bold;
+			/*opacity: 0.8;*/
+			text-transform: capitalize;
+		}
+		#result{
+			margin-top: 10px;
+			/*height: 30px;
+			line-height: 30px;*/
+			color: green;
+			font-size: 16px;
+			font-weight: bold;
+			/*opacity: 0.6;*/
+			text-transform: capitalize;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			function calculate(){
+				var error = '';
+				var result = '';
+
+				var obj_number = document.getElementById('number').value;
+				var a = parseInt(obj_number);
+				//alert(obj_number);
+				if(obj_number == ''){
+					error = "không được để trống a";
+				}else if(isNaN(obj_number)){
+					error = "a nhập vào cần phải là number"
+				};
+				
+				if(error == ''){
+					function giaithua(m){
+						var gt = 1;
+						for(var i = 1; i <= m; i++){
+							gt *= i;
+						}
+						return gt;
+					}
+					result = giaithua(a);
+					document.getElementById('result').innerHTML = "giai thừa của " + a + " là: " +  result;
+					document.getElementById('error').innerHTML = '';
+				}
+				if(error !== ''){
+					document.getElementById('error').innerHTML = error;
+					document.getElementById('result').innerHTML = '';
+				}
+
+				event.preventDefault();
+				};
+			
+			document.getElementById('form').addEventListener('submit', function(){
+				calculate();
+			})
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h2>Tìm giai thừa</h2><br>
+		<form action="#" method="post" id="form">
+			<label class="text-muted">Nhập vào hệ số giai thừa</label>
+			<input type="text" class="form-control form-group" name="" id="number">
+			<input type="submit" class="btn btn-primary" name="" value="tính giai thừa"> 
+			<div id="error"></div>
+			<div id="result"></div>
+		</form>
+	</div>
+</body>
+</html>

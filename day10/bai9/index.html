@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 9</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = -4;
+		var sum1 = --a + a++ * 2;
+		// -5 + (-5 * 2) == - 5 -10 = -15;
+		console.log(sum1);
+		var b = 9;
+		var sum2 = 10;
+		sum2 %= b-- * b++ - 2 + --b % 2;
+		//10 %= 9 * 8 - 2 + 8%2
+		// 10 %= 72 - 2 + 0
+		// 10%= 70
+		// 10
+		console.log(sum2);
+		var c = 4;
+		var d = c++; //5
+		var sum3 = c*d++ * 2 - c-- * d++;
+		console.log(sum3);
+		// sum3 = 4*5*2 - 5*5
+		// sum3 = 40-25 = 15;
+	</script>
+</body>
+</html>

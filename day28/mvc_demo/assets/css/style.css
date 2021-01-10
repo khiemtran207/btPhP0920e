@@ -1,0 +1,11 @@
+.header{
+    background: red;
+    color: #e5e5e5;
+}
+.main{
+    border: 1px solid #000;
+}
+.footer{
+    background: blue;
+    color: #e5e5e5;
+}

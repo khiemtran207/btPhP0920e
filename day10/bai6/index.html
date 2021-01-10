@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../day18/css/bootstrap.min.css">
+	<style type="text/css">
+		.container{
+			margin-top: 20px;
+		}
+		hr{
+			margin: 30px 0;
+		}
+		h2{
+			text-align: center;
+		}
+		#error{
+			/*height: 30px;
+			line-height: 30px;*/
+			margin-top: 10px;
+			color: red;
+			font-size: 18px;
+			font-weight: bold;
+			opacity: 0.8;
+			text-transform: capitalize;
+		}
+		#result{
+			margin-top: 10px;
+			/*height: 30px;
+			line-height: 30px;*/
+			color: green;
+			font-size: 18px;
+			font-weight: bold;
+			opacity: 0.6;
+			text-transform: capitalize;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			function calculate(){
+
+				var error = '';
+				var result = '';
+
+				obj_text_1 = document.getElementById('text_1').value;
+				obj_text_2 = document.getElementById('text_2').value;
+
+				if(obj_text_1 == ''){
+					error = "không được để trống a";
+					document.getElementById('text_1').focus();
+				}else if(obj_text_2 == ''){
+					error = "không được để trống b";
+					document.getElementById('text_2').focus();
+				}
+				if(error == ''){
+					if(obj_text_1.search(obj_text_2) == -1){
+						result = "chuỗi: " + obj_text_2 + " không tồn tại trong chuỗi ban đầu: " + obj_text_1;
+					}else{
+						result = "chuỗi: " + obj_text_2 + " có tồn tại trong chuỗi ban đầu: " + obj_text_1;
+						
+					}
+					document.getElementById('result').innerHTML = result;
+					document.getElementById('error').innerHTML = '';
+				}else{
+					document.getElementById('error').innerHTML = error;
+					document.getElementById('result').innerHTML = "";
+				}
+
+				event.preventDefault();
+
+			}
+
+
+
+			document.getElementById('form').addEventListener('submit', function(){
+				calculate();
+			});
+			document.getElementById('reset').addEventListener('click', function(){
+				document.getElementById('result').innerHTML = "";
+				document.getElementById('error').innerHTML = "";
+			});
+
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h2 class="h2">Kiểm tra sự tồn tại của chuỗi</h2><hr>
+		<form id="form" action="#" method="post">
+			<label class="text-muted">Nhập vào chuỗi ban đầu:</label>
+			<input type="text" id="text_1" class="form-control form-group" name="">
+			<label class="text-muted">Nhập vào chuỗi cần kiểm tra:</label>
+			<input type="text" id="text_2" class="form-control form-group" name="">
+			<input type="submit" class="btn btn-primary" name="" value="kiểm tra">
+			<input type="reset" class="btn btn-danger" id="reset" name="" value="reset">
+			<div id="error"></div>
+			<div id="result"></div>
+		</form>
+	</div>
+</body>
+</html>

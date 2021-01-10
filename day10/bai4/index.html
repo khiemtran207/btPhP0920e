@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<meta>
+	<title>bài 4</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../day18/css/bootstrap.min.css">
+	<style type="text/css">
+		h3{
+			text-align: center;
+			color: blue;
+		}
+		#showPt{
+			
+			font-size: 18px;
+			height: 30px;
+			list-style: 30px;
+			margin-bottom: 10px;
+			color: green;
+		}
+		#result{
+			
+			font-size: 18px;
+			margin-top: 10px;
+			color: blue;
+		}
+		#error{
+						font-size: 18px;
+			color: red;
+			margin-top: 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			function calculate(){
+			var error = '';
+			var result = "";
+			var x1 = '';
+			var x2 = '';
+
+			var obj_number_a = document.getElementById('number_a').value;
+			var obj_number_b = document.getElementById('number_b').value;
+			var obj_number_c = document.getElementById('number_c').value;
+
+
+			if(obj_number_a == '' || obj_number_b == '' || obj_number_c == ''){
+				error = "không được để trống a, b hoặc c";
+			}else if(isNaN(obj_number_a) || isNaN(obj_number_b) || isNaN(obj_number_c)){
+				error = "a,b và c cần phải là số"
+			}
+
+			if(error == ''){
+
+				 a = parseInt(obj_number_a);
+				 b = parseInt(obj_number_b);
+				 c = parseInt(obj_number_c);
+
+				var delta = b*b - 4*a*c;
+				deltaNew = parseInt(delta);
+
+				if(deltaNew == 0){
+				var	x = (-b)/(2*a);
+					document.getElementById('result').innerHTML = "phương trình có nghiệm kép: x1 = x2 =" + x;
+
+				}else if(deltaNew < 0){
+					result = "phương trình vô nghiệm";
+					document.getElementById('result').innerHTML = result;
+				}else if(deltaNew > 0){
+					x1 = ((-b) - Math.sqrt(deltaNew))/(2*a);
+					x2 = ((-b) + Math.sqrt(deltaNew))/(2*a);
+					document.getElementById('result').innerHTML = "phương tình có 2 nghiệm" +"<br>"+ " x1 = " + x1 + "<br>" + "x2 = "+ x2; 
+				}
+				document.getElementById('showPt').innerHTML = a + "x<sup>2</sup> + " + b + "x + " + c + " = 0 ";
+			}
+				if(error !== ''){
+					document.getElementById('result').innerHTML = '';
+					document.getElementById('showPt').innerHTML = '';
+				}
+			document.getElementById('error').innerHTML = error;
+
+			event.preventDefault();
+
+		}
+		document.getElementById('form').addEventListener('submit', function(){
+			calculate();
+		});
+		document.getElementById('reset').addEventListener('click', function(){
+				document.getElementById('result').innerHTML = "";
+				document.getElementById('error').innerHTML = "";
+				document.getElementById('showPt').innerHTML = "";
+			});
+
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h3>Giải phương trình bậc 2 một ẩn</h3>
+		<h3>x<sup>2</sup>+ bx + c = 0</h3><hr>
+		<form action="#" method="post" id="form">
+			<label class="text-muted">Nhập vào hệ số a:</label>
+			<input type="text" id="number_a" name="" class="text-muted form-control form-group">
+			<label class="text-muted">Nhập vào hệ số b:</label>
+			<input type="text" id="number_b" name="" class="text-muted form-control form-group">
+			<label class="text-muted">Nhập vào hệ số c:</label>
+			<input type="text" id="number_c" name="" class="text-muted form-control form-group">
+			<label class="text-muted">Phương trình bậc hai một ẩn của bạn có dạng là:</label>
+			<div id ="showPt"></div>
+			<input type="submit" class="btn btn-primary" name="">
+			<input type="reset" class="btn btn-danger" id="reset" name="" value="reset">
+			<div id="error"></div>
+			<div id="result"></div>
+		</form>
+	</div>
+</body>
+</html>

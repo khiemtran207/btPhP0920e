@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai3 jQuery</title>
+	<meta charset="utf-8">
+	<!-- <meta  name="viewport" content="width=divice-width, initial-scale=1.0"> -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		.container{
+			margin: 20px auto;
+		}
+		h1{
+			text-align: center;
+			font-size: 23px;
+			margin: 30px 0;
+			text-transform:  capitalize;
+		}
+		input[type="submit"]{
+			margin-bottom: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#form').submit(function(){
+				var error = '';
+				var result = '';
+
+				const Pi = 3.14;
+
+				var obj_cricle = $('#circle').val();
+				var int_obj_cricle = parseInt(obj_cricle);
+
+				if(obj_cricle == ''){
+					error = "không được để trống dữ liệu bán kính!";
+					$('#circle').focus();
+				}else if(isNaN(obj_cricle)){
+					error = "dữ liệu bán kính nhập vào phải là số!"
+					$('#circle').focus();
+				}
+
+				if(error == ''){
+					obj_cv = 2*Pi*int_obj_cricle;
+					obj_dt = Pi*(int_obj_cricle * int_obj_cricle);
+					result = 'Chu vi của hình tròn là: ' + obj_cv+"m" + "<br>" + " Diện tích của hình tròn là: " + obj_dt +"m<sup>2</sup>";
+					$('.result').html(result).css('color','green').css('font-size','17px');
+					$('error').html('');
+				}else{
+					$('.error').html(error).css('color','red').css('font-size','17px');;
+					$('result').html('');
+				}
+
+				event.preventDefault();
+			});
+			$('#reset').click(function(){
+				$('.result').html('');
+				$('.error').html('');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Chu vi và diện tích hình tròn</h1><hr>
+		<form action="#" method="post" id="form">
+			<div class ="error"></div>
+			<label class="text-muted">Nhập vào bán kính hình tròn(đơn vị: met)</label>
+			<input type="text" id="circle" class="form-control form-group">
+			<input type="submit" class="btn btn-success" name="" value="tính chu vi và diện tích hình tròn">
+			<input type="reset" id="reset" class="btn btn-info form-group" value="reset dữ liệu" name="">
+			<div class ="result"></div>
+		</form>
+	</div>
+</body>
+</html>

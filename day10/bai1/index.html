@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 1</title>
+	<link rel="stylesheet" type="text/css" href="../../day18/css/bootstrap.min.css">
+	
+</head>
+<body>
+	<div class="container">
+		<h1 class="h1">Thực hành toán tử số học</h1>
+		<form action="#" method="post">
+			<label class="text-muted">Nhập vào số a:</label>
+			<input type="number" class="form-control form-group" id="number1">
+			<label class="text-muted">Nhập vào số b:</label>
+			<input type="number" class="form-control form-group" id="number2">
+			<button class="btn btn-primary form-group" id="cong">a+b</button>
+			<button class="btn btn-success form-group" id="hieu">a-b</button>
+			<button class="btn btn-warning form-group" id="tich">a*b</button>
+			<button class="btn btn-danger form-group" id="thuog">a/b</button>
+			<button class="btn btn-info form-group" id="phantram">a%b</button>
+			<button class="btn btn-success form-group" id="ccsau">a++</button><br>
+			<button class="btn btn-primary form-group" id="cctrc">++a</button>
+			<button class="btn btn-warning form-group" id="ttsau">a--</button>
+			<button class="btn btn-danger form-group" id="tttrc">--a</button><br>
+			<input type="reset" class="btn btn-warning form-group" id="reset" value="reset data">
+		</form>
+		<div id="showdata"></div>
+	</div>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+		$(document).ready(function(){
+			$("#cong").click(function(){
+			var number1 = parseInt(document.getElementById('number1').value);
+			var number2 = parseInt(document.getElementById('number2').value);
+			var sum = number1 + number2;
+			console.log(sum);
+				$("#showdata").html(sum);
+			})
+		})
+	</script> -->
+	<script type="text/javascript">
+		document.getElementById('cong').addEventListener('click',function(){
+			if(document.getElementById('number1').value == "" || document.getElementById('number2').value == ""){
+				document.getElementById('showdata').innerHTML = "k đc để trống a hoặc b"
+			}else{
+			var number1 = parseInt(document.getElementById('number1').value);
+			var number2 = parseInt(document.getElementById('number2').value);
+			var sum = number1 + number2;
+			document.getElementById('showdata').innerHTML = "a + b = " + sum;
+			}
+			event.preventDefault();
+		});
+		document.getElementById('hieu').addEventListener('click',function(){
+			if(document.getElementById('number1').value == "" || document.getElementById('number2').value == ""){
+				document.getElementById('showdata').innerHTML = "k đc để trống a hoặc b"
+			}else{
+			var number1 = parseInt(document.getElementById('number1').value);
+			var number2 = parseInt(document.getElementById('number2').value);
+			var sum = number1 - number2;
+			document.getElementById('showdata').innerHTML = "a - b = " + sum;
+			}
+			event.preventDefault();
+		});
+		document.getElementById('tich').addEventListener('click',function(){
+			if(document.getElementById('number1').value == "" || document.getElementById('number2').value == ""){
+				document.getElementById('showdata').innerHTML = "k đc để trống a hoặc b"
+			}else{
+			var number1 = parseInt(document.getElementById('number1').value);
+			var number2 = parseInt(document.getElementById('number2').value);
+			var sum = number1 * number2;
+			document.getElementById('showdata').innerHTML = "a * b = " + sum;
+			}
+			event.preventDefault();
+		});
+		document.getElementById('thuog').addEventListener('click',function(){
+			if(document.getElementById('number1').value == "" || document.getElementById('number2').value == ""){
+				document.getElementById('showdata').innerHTML = "k đc để trống a hoặc b"
+			}else{
+			var number1 = parseInt(document.getElementById('number1').value);
+			var number2 = parseInt(document.getElementById('number2').value);
+			var sum = number1 / number2;
+			document.getElementById('showdata').innerHTML = "a / b = " + sum;
+			}
+			event.preventDefault();
+		});
+		document.getElementById('phantram').addEventListener('click',function(){
+			if(document.getElementById('number1').value == "" || document.getElementById('number2').value == ""){
+				document.getElementById('showdata').innerHTML = "k đc để trống a hoặc b"
+			}else{
+			var number1 = parseInt(document.getElementById('number1').value);
+			var number2 = parseInt(document.getElementById('number2').value);
+			var sum = number1 % number2;
+			document.getElementById('showdata').innerHTML = "a % b = " + sum;
+			}
+			event.preventDefault();
+		});
+		document.getElementById('ccsau').addEventListener('click',function(){
+			if(document.getElementById('number1').value == ""){
+				document.getElementById('showdata').innerHTML = "k đc để trống a"
+			}else{
+			var number1 = parseInt(document.getElementById('number1').value);
+			var sum = number1 ++;
+			document.getElementById('showdata').innerHTML = "a++ = " + sum;
+			}
+			event.preventDefault();
+		});
+		document.getElementById('cctrc').addEventListener('click',function(){
+			if(document.getElementById('number1').value == ""){
+				document.getElementById('showdata').innerHTML = "k đc để trống a"
+			}else{
+			var number1 = parseInt(document.getElementById('number1').value);
+			var sum = ++number1;
+			document.getElementById('showdata').innerHTML = "++a = " + sum;
+			}
+			event.preventDefault();
+		});
+		document.getElementById('ttsau').addEventListener('click',function(){
+			if(document.getElementById('number1').value == ""){
+				document.getElementById('showdata').innerHTML = "k đc để trống a "
+			}else{
+			var number1 = parseInt(document.getElementById('number1').value);
+			var sum = number1--;
+			document.getElementById('showdata').innerHTML = "a-- =" + sum;
+			}
+			event.preventDefault();
+		});
+		document.getElementById('tttrc').addEventListener('click',function(){
+			if(document.getElementById('number1').value == ""){
+				document.getElementById('showdata').innerHTML = "k đc để trống a"
+			}else{
+			var number1 = parseInt(document.getElementById('number1').value);
+			var sum = --number1;
+			document.getElementById('showdata').innerHTML = "--a =" + sum;
+			}
+			event.preventDefault();
+		});
+	</script>
+</body>
+</html>

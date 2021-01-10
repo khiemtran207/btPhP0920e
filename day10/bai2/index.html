@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 2</title>
+	<link rel="stylesheet" type="text/css" href="../../day18/css/bootstrap.min.css">
+	<style type="text/css">
+		#error{
+			/*height: 30px;
+			line-height: 30px;*/
+			margin-top: 10px;
+			color: red;
+			font-size: 16px;
+			/*font-weight: bold;*/
+			/*opacity: 0.8;*/
+			text-transform: capitalize;
+		}
+		#result{
+			margin-top: 10px;
+			/*height: 30px;
+			line-height: 30px;*/
+			color: green;
+			font-size: 16px;
+			/*font-weight: bold;*/
+			/*opacity: 0.6;*/
+			text-transform: capitalize;
+		}
+	</style>
+</head>
+<body>
+	<div class="container"><br>
+		<form action="#" method="post" id="form">
+			<label class="text-muted">Nhập vào số a:</label>
+			<input type="text" id="number" class="form-control form-group">
+			<input type="submit" class="btn btn-primary" value="kiểm tra">
+			<input type="reset" class="btn btn-warning" value="reset" id="reset">
+		<h4  id="error"></h4>
+		<h4  id="result"></h4>
+	</form>
+	</div>
+	<script type="text/javascript">
+		function calculate(){
+			var error = '';
+			var result = '';
+			var obj_number = document.getElementById('number').value;
+			//alert(typeof obj_number);
+			//alert(typeof obj_number);
+			if(obj_number == ""){
+				error = "không được để trống a";
+			}
+			// else if(typeof obj_number == 'string'){
+			// 	error = "a cần phải là số";
+			// }
+			else if(isNaN(obj_number)){
+				error = "a phải là số";
+				console.log(error);
+			}else if(
+				parseInt(obj_number)<1 && 10<parseInt(obj_number)<50 && parseInt(obj_number)> 100){
+				error = "a không nằm trong khoảng từ 1 - 10 hoặc 50 - 100";
+				console.log(error);
+			}
+			if(error == ""){
+				result = "a nằm trong khoảng từ 1 - 10 hoặc 50 - 100";
+				console.log(result);
+			}
+			document.getElementById('error').innerHTML = error;
+			document.getElementById('result').innerHTML = result;
+
+			event.preventDefault();
+			
+		}
+		document.getElementById('form').addEventListener('submit', function(){
+			calculate();
+		});
+		document.getElementById('reset').addEventListener('click', function(){
+				document.getElementById('error').innerHTML = " ";
+				document.getElementById('result').innerHTML = " ";
+				document.getElementById('number').value = " ";
+				event.preventDefault();
+			})
+	</script>	
+</body>
+</html>

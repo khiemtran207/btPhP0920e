@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 12</title>
+	<link rel="stylesheet" type="text/css" href="../../day18/css/bootstrap.min.css">
+	<style type="text/css">
+		#error{
+			/*height: 30px;
+			line-height: 30px;*/
+			margin-top: 10px;
+			color: red;
+			font-size: 16px;
+			font-weight: bold;
+			/*opacity: 0.8;*/
+			text-transform: capitalize;
+		}
+		#result{
+			margin-top: 10px;
+			/*height: 30px;
+			line-height: 30px;*/
+			color: green;
+			font-size: 16px;
+			font-weight: bold;
+			/*opacity: 0.6;*/
+			text-transform: capitalize;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			function calculate(){
+				var error = '';
+				var result = '';
+
+				var obj_number = document.getElementById('number').value;
+				var a = parseInt(obj_number);
+				//alert(obj_number);
+
+				if(obj_number == ''){
+					error = "không được để trống a";
+					console.log(error);
+				}else if(isNaN(obj_number)){
+					error = "a nhập vào cần phải là number";
+					console.log(error);
+				};
+
+				if(error == ''){
+					function star(m){
+						var gt = '*';
+						for(var i = 1; i <= m; i++){
+							gt += '*';
+						}
+						return gt;
+					}
+					alert(star(a));
+
+				}
+				
+				
+				event.preventDefault();
+				};
+			
+			document.getElementById('form').addEventListener('submit', function(){
+				calculate();
+			})
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h2>Hiển thị*</h2><br>
+		<form action="#" method="post" id="form">
+			<label class="text-muted">Nhập vào số hàng</label>
+			<input type="text"  name="" id="number" class="form-control form-group">
+			<input type="submit" class="btn btn-primary" name="">
+			<div id="error"></div>
+			<div id="result"></div>
+			</form>
+	</div>
+</body>
+</html>

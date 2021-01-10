@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../day18/css/bootstrap.min.css">
+	<style type="text/css">
+		h2{
+			text-align: center;
+		}
+		#error{
+			/*height: 30px;
+			line-height: 30px;*/
+			margin-top: 10px;
+			color: red;
+			font-size: 16px;
+			font-weight: bold;
+			/*opacity: 0.8;*/
+			text-transform: capitalize;
+		}
+		#max{
+			margin-top: 10px;
+			/*height: 30px;
+			line-height: 30px;*/
+			color: blue;
+			font-size: 16px;
+			font-weight: bold;
+			/*opacity: 0.6;*/
+			text-transform: capitalize;
+		}
+		#min{
+			margin-top: 10px;
+			/*height: 30px;
+			line-height: 30px;*/
+			color: green;
+			font-size: 16px;
+			font-weight: bold;
+			/*opacity: 0.6;*/
+			text-transform: capitalize;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			function calculate(){
+
+				var error = '';
+				var max = '';
+				var min = '';
+
+				var obj_number_a = document.getElementById('number_a').value;
+				var obj_number_b = document.getElementById('number_b').value;	
+				var obj_number_c = document.getElementById('number_c').value;
+			
+				if(obj_number_a == ''){
+					error = "không được để trống a";
+					document.getElementById('number_a').focus();
+				}else if(isNaN(obj_number_a) ){
+					error = "a cần phải là số";
+					document.getElementById('number_a').focus();
+				}else if(obj_number_b == ''){
+					error = "không được để trống b";
+					document.getElementById('number_b').focus();
+				}else if(isNaN(obj_number_b) ){
+					error = "b cần phải là số";
+					document.getElementById('number_b').focus();
+				}
+				else if(obj_number_c == ''){
+					error = "không được để trống c";
+					document.getElementById('number_c').focus();
+				}else if(isNaN(obj_number_c) ){
+					error = "c cần phải là số";
+					document.getElementById('number_c').focus();
+				}
+
+				if(error == ''){
+					var arrayNumber = [];
+
+					var a = parseInt(obj_number_a);
+					var b = parseInt(obj_number_b);
+					var c = parseInt(obj_number_c);
+					// console.log(a);
+					// console.log(b);
+					// console.log(typeof(c));
+
+					arrayNumber.push(a,b,c);
+					console.log(arrayNumber);
+
+					var max = arrayNumber.reduce(function(a,b){
+						return Math.max(a,b);
+					});
+					var min = arrayNumber.reduce(function(a,b){
+						return Math.min(a,b);
+					});
+					document.getElementById('max').innerHTML = "giá trị lớn nhất là: " + max;
+					document.getElementById('min').innerHTML = "giá trị nhỏ nhất là: " + min;
+				};
+				if(error !== ''){
+					document.getElementById('max').innerHTML = "";
+					document.getElementById('min').innerHTML = "";
+				}
+
+				document.getElementById('error').innerHTML = error;
+
+				event.preventDefault();
+
+
+			}
+			document.getElementById('form').addEventListener('submit', function(){
+				calculate();
+			});
+			document.getElementById('reset').addEventListener('click', function(){
+				document.getElementById('max').innerHTML = "";
+				document.getElementById('min').innerHTML = "";
+				document.getElementById('error').innerHTML = "";
+			});
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h2>Tìm max - min</h2><hr>
+		<form action="#" id="form" method="post">
+			<label class="text-muted">Nhập vào số thứ nhất:</label>
+			<input type="text" id="number_a" class="form-control form-group" name="">
+			<label class="text-muted">Nhập vào số thứ hai:</label>
+			<input type="text" id="number_b" class="form-control form-group" name="">
+			<label class="text-muted">Nhập vào số thứ ba:</label>
+			<input type="text" id="number_c" class="form-control form-group" name="">
+			<input type="submit" class="btn btn-primary form-group" name="" value="hiển thị max - min">
+			<input type="reset" class="btn btn-danger form-group" id="reset" name="" value="reset">
+		</form>
+		<div id="error"></div>
+		<div id="max"></div>
+		<div id="min"></div>
+	</div>
+</body>
+</html>

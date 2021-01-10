@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: red;
+    color: #e5e5e5;
+
+}
+.header h1{
+    margin: 0;
+}
+.main{
+    border: 1px solid black;
+}
+.footer{
+    background: cadetblue;
+    color: #e5e5e5;
+}
+.container_create {
+    max-width: 40%;
+    margin: 0 auto;
+}
+.container_create span{
+    color: #ff272f;
+}
+.container_create a{
+    text-decoration: none;
+    color: #e5e5e5;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 3</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../day18/css/bootstrap.min.css">
+	<script type="text/javascript">
+		window.onload = function(){
+			function calculate(operator){
+				var error = '';
+				var result = '';
+				var number_a = document.getElementById('number_a');
+				obj_number_a = number_a.value;
+				// console.log(obj_number_a);
+				var number_b = document.getElementById('number_b');
+				obj_number_b = number_b.value;
+
+				if(obj_number_a == "" || obj_number_b == ""){
+					error = "không được để trống a và b";
+				}else if (isNaN(obj_number_a) || isNaN(obj_number_b)){
+					error = "a và b cần phải là số";
+				}
+				
+				if(error == ''){
+					result = -parseInt(obj_number_b)/parseInt(obj_number_a);
+					document.getElementById('showPt').innerHTML = obj_number_a + "x "+ "+ " + obj_number_b + " = " + "0";
+					document.getElementById('result').innerHTML = "x = " +  result;
+				}
+				document.getElementById('error').innerHTML = error;
+				event.preventDefault();
+			}
+			document.getElementById('form').addEventListener('submit', function(){
+				calculate();
+			});
+			document.getElementById('reset').addEventListener('click', function(){
+				document.getElementById('result').innerHTML = "";
+				document.getElementById('error').innerHTML = "";
+				document.getElementById('showPt').innerHTML = "";
+			})
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h2 style="text-align: center;">Gải phương trình bậc nhất</h2>
+		<h2 style="text-align: center;">ax + b = 0</h2>
+		<form action="#" method="post" id="form">
+			<label class="text-muted">Nhập vào hệ số a:</label>
+			<input type="text" id="number_a" class="form-control form-group" name="">
+			<label class="text-muted">Nhập vào hệ số b:</label>
+			<input type="text" id="number_b" class="form-control form-group" name="">
+			<label class="text-muted">Phương trình bậc nhất của bạn đang nhập có dạng là: </label>
+			<div id="showPt" class="form-group" style="height: 30px; color: green"></div >
+			<input type="submit" class="btn btn-primary form-group" name="" value="tìm x">
+			<input type="reset" class="btn btn-warning form-group" name="" value="reset" id="reset">
+			<div id="result" style="color: blue"></div>
+			<div id="error" style="color: red"></div>
+		</form>
+	</div>
+</body>
+</html>

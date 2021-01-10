@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=divice-width, initial-scale=1.0">
+	<title>bài 1 jquery</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		.container{
+			margin: 20px auto;
+		}
+		h1{
+			text-align: center;
+			font-size: 23px;
+			margin: 30px 0;
+			text-transform:  capitalize;
+		}
+		input[type="submit"]{
+			margin-bottom: 20px;
+
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#form').submit(function(){
+				var error = '';
+				var result = '';
+
+				var obj_length = $('#length').val();
+				var obj_width = $('#width').val();
+				var int_obj_length = parseInt(obj_length);
+				var int_obj_width = parseInt(obj_width);
+				if(obj_length == ""){
+					error = 'Không được để trống dữ liệu chiều dài!';
+					$('#length').focus();
+					//alert(error);
+				}else if(obj_width == ''){
+					error = 'Không được để trống dữ liệu chiều rộng!';
+					$('#width').focus();
+					//alert(error);
+				}else if(isNaN(obj_length)){
+					error = "chiều dài Cần nhập dữ liệu là số!";
+					$('#length').focus();
+					//alert(error);
+				}else if(isNaN(obj_width)){
+					error = "chiều rộng Cần nhập dữ liệu là số!";
+					$('#width').focus();
+					//alert(error);
+				}
+
+				if(error == ''){
+					var obj_cv =(int_obj_width + int_obj_length)/2
+					//alert(obj_cv);
+					var obj_dt = int_obj_length * int_obj_width;
+					//alert(obj_dt);
+					$('.result').html("chu vi hình chữ nhật là: "+ obj_cv+ "m"  +" <br>diện tích hình chữ nhật là: " + obj_dt + 'm<sup>2</sup>');
+					$('.result').css('color','green').css('font-size','16px').css('text-transform', 'capitalize');
+						$('.error').html('');
+				}else{
+					$('.error').html(error);
+					$('.error').css('color','red').css('font-size','17px').css('text-transform', 'capitalize').css('height','50px').css('line-height','50px');
+					$('.result').html('');
+				}
+
+				event.preventDefault();
+			});
+			$('#reset').click(function(){
+				$('.result').html('');
+				$('.error').html('');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Chu vi và diện tích hình chữ nhật</h1><hr>
+		<form action="#" method="post" id="form">
+			<div class ="error"></div>
+			<label class="text-muted">Nhập vào chiều dài(đơn vị: met)</label>
+			<input type="text" id="length" class="form-control form-group">
+			<label class="text-muted">Nhập vào chiều rộng(đơn vị: met)</label>
+			<input type="text" id="width" class="form-control form-group">
+			<input type="submit" class="btn btn-success" name="" value="tính chu vi và diện tích ">
+			<input type="reset" id="reset" class="btn btn-warning form-group" value="reset dữ liệu" name="">
+			<div class ="result"></div>
+		</form>
+	</div>
+</body>
+</html>

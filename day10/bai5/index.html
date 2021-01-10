@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 5: kiểm tra số nguyên tố</title>
+	<link rel="stylesheet" type="text/css" href="../../day18/css/bootstrap.min.css">
+	<style type="text/css">
+		.container{
+			margin-top: 20px;
+			/*text-align: center;*/
+		}
+		#error{
+			/*height: 30px;
+			line-height: 30px;*/
+			margin-top: 10px;
+			color: red;
+			font-size: 18px;
+			font-weight: bold;
+			opacity: 0.8;
+			text-transform: capitalize;
+		}
+		#result{
+			margin-top: 10px;
+			/*height: 30px;
+			line-height: 30px;*/
+			color: green;
+			font-size: 18px;
+			font-weight: bold;
+			opacity: 0.6;
+			text-transform: capitalize;
+		}
+		h2{
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			function calculate(){
+
+				var error = '';
+				var result = '';
+
+				var obj_number = document.getElementById('number').value;
+
+				var a = parseInt(obj_number);
+
+				if(obj_number == ''){
+					error = "không được để trống số a";
+					//console.log(error);
+				}else if(isNaN(obj_number)){
+					error = "nội dung nhập vào phải là số"
+					//console.log(error);
+				}
+				
+				if(error == ''){
+					if(a<=3){
+						result = "a không phải là số nguyên tố";
+					}else{
+						for(var i = 2; i< (a-1); i++){
+							if(a % i == 0){
+								result = "a không phải là số nguyên tố";
+								 break;
+							}else{
+								result = "a là số nguyên tố";
+							}
+						}
+					}
+			}
+
+				document.getElementById('error').innerHTML = error;
+				document.getElementById('result').innerHTML = result;
+
+				event.preventDefault();
+
+			}
+			document.getElementById('form').addEventListener('submit', function(){
+				calculate();
+			});
+			document.getElementById('reset').addEventListener('click', function(){
+				document.getElementById('result').innerHTML = "";
+				document.getElementById('error').innerHTML = "";
+				// document.getElementById('showPt').innerHTML = "";
+			})
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h2 class="h2">Kiểm tra số nguyên tố</h2><hr>
+		<form action="#" method="post" id="form">
+			<label class="text-muted">Nhập vào số a:</label>
+			<input type="text" name="" id="number" class="form-control form-group">
+			<input type="submit" name="" class="btn btn-primary" value="kiểm tra">
+			<input type="reset" name="" class="btn btn-danger" value="reset" id="reset">
+			<div id="error"></div>
+			<div id="result"></div>
+		</form>
+	</div>
+</body>
+</html>

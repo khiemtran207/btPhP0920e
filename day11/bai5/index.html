@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai4 jQuery</title>
+	<meta charset="utf-8">
+	<!-- <meta  name="viewport" content="width=divice-width, initial-scale=1.0"> -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		.container{
+			margin: 20px auto;
+		}
+		h1{
+			text-align: center;
+			font-size: 23px;
+			margin: 30px 0;
+			text-transform:  capitalize;
+		}
+		input[type="submit"]{
+			margin-bottom: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#form').submit(function(){
+				var error = '';
+				var result = ''
+
+				var obj_number = $('#number').val();
+				var int_obj_number = parseInt(obj_number);
+
+				if(obj_number == ''){
+					error = "không được để trống dữ liệu!";
+					//alert(error);
+					$('#number').focus();
+				}else if(isNaN(obj_number)){
+					error = "dữ liệu nhập vào phải là số!"
+					$('#number').focus();
+				}
+
+				if(error == ''){
+					
+					for(var i = 0 ; i < int_obj_number ; i++){
+						if(i % 2 == 0){
+							result += i++;
+							break;
+						}else{
+							result += i++;
+						}
+					}
+					
+
+					$('.result').html(result).css('color','green').css('font-size','17px');
+					$('error').html('');
+				}else{
+					$('.error').html(error).css('color','red').css('font-size','17px');;
+					$('result').html('');
+				}
+
+				event.preventDefault();
+
+			});
+			$('#reset').click(function(){
+				$('.result').html('');
+				$('.error').html('');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Số nguyên tố</h1><hr>
+		<form action="#" method="post" id="form">
+			<div class ="error"></div>
+			<label class="text-muted">Nhập vào số a: </label>
+			<input type="text" id="number" class="form-control form-group">
+			<input type="submit" class="btn btn-success" name="" value="kết quả">
+			<input type="reset" id="reset" class="btn btn-info form-group" value="reset dữ liệu" name="">
+			<div class ="result"></div>
+		</form>
+	</div>
+</body>
+</html>
